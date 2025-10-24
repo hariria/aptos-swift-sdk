@@ -12,6 +12,10 @@ let package = Package(
     ],
     products: [
         .library(name: "Aptos", targets: ["Aptos", "APIs", "Core", "BCS", "Transactions", "Utils", "Types"]),
+        .library(name: "Core", targets: ["Core", "Types", "BCS"]),
+        .library(name: "Types", targets: ["Types", "BCS"]),
+        .library(name: "Utils", targets: ["Utils"]),
+        .library(name: "Transactions", targets: ["Transactions", "Core", "BCS", "Types"]),
         .library(name: "BIP32", targets: ["BIP32"]),
     ],
     dependencies: [
